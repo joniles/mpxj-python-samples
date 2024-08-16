@@ -7,8 +7,7 @@ from net.sf.mpxj.reader import UniversalProjectReader
 from net.sf.mpxj import FieldTypeClass
 from net.sf.mpxj import TaskField
 
-project = UniversalProjectReader().read(
-    'some-file-with-custom-fields.mpp')
+project = UniversalProjectReader().read('example.mpp')
 
 # Just to get started, let's see what tasks we have
 print("Tasks")
