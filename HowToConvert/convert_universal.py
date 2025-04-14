@@ -3,8 +3,8 @@ import mpxj
 
 jpype.startJVM()
 
-from net.sf.mpxj.reader import UniversalProjectReader
-from net.sf.mpxj.writer import ProjectWriterUtility
+from org.mpxj.reader import UniversalProjectReader
+from org.mpxj.writer import ProjectWriterUtility
 
 def convert(input_file, output_file):
 	reader = UniversalProjectReader()

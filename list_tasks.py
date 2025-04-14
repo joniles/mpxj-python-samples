@@ -2,7 +2,7 @@ import jpype
 import mpxj
 
 jpype.startJVM()
-from net.sf.mpxj.reader import UniversalProjectReader
+from org.mpxj.reader import UniversalProjectReader
 project = UniversalProjectReader().read('example.mpp')
 
 print("Tasks")
