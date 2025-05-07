@@ -7,7 +7,7 @@ import mpxj
 jpype.startJVM()
 
 # Read a sample file
-from net.sf.mpxj.reader import UniversalProjectReader
+from org.mpxj.reader import UniversalProjectReader
 project = UniversalProjectReader().read('example.mpp')
 
 # Display details of the effective calendar for each task

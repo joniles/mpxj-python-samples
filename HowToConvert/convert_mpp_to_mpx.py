@@ -3,8 +3,8 @@ import mpxj
 
 jpype.startJVM()
 
-from net.sf.mpxj.mpp import MPPReader
-from net.sf.mpxj.mpx import MPXWriter
+from org.mpxj.mpp import MPPReader
+from org.mpxj.mpx import MPXWriter
 
 def convert(input_file, output_file):
 	reader = MPPReader()

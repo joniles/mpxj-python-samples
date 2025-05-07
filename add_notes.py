@@ -8,7 +8,7 @@ import tempfile
 jpype.startJVM()
 
 # Read a sample file
-from net.sf.mpxj.reader import UniversalProjectReader
+from org.mpxj.reader import UniversalProjectReader
 project = UniversalProjectReader().read('example.mpp')
 
 # Update the tasks with notes
@@ -21,7 +21,7 @@ tempFile = tempfile.NamedTemporaryFile(suffix='.xml').name
 print("Writing new file to", tempFile)
 
 # Write as MSPDI to the temporary file
-from net.sf.mpxj.mspdi import MSPDIWriter
+from org.mpxj.mspdi import MSPDIWriter
 writer = MSPDIWriter()
 writer.write(project, tempFile)
 

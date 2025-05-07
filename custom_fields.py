@@ -3,9 +3,9 @@ import mpxj
 
 jpype.startJVM()
 
-from net.sf.mpxj.reader import UniversalProjectReader
-from net.sf.mpxj import FieldTypeClass
-from net.sf.mpxj import TaskField
+from org.mpxj.reader import UniversalProjectReader
+from org.mpxj import FieldTypeClass
+from org.mpxj import TaskField
 
 project = UniversalProjectReader().read('example.mpp')
 
